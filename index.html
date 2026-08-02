@@ -3356,9 +3356,14 @@
                 height: 36px;
                 justify-content: center;
             }
+            
+            /* Hide non-essential buttons on mobile to make room for typing */
+            .ai-btn-icon, .ai-btn-pill:not(.ai-btn-voice) {
+                display: none !important;
+            }
 
             .ai-chat-input-container {
-                padding: 10px 12px 10px 16px;
+                padding: 8px 10px 8px 14px;
             }
 
             .ai-chat-matrix {
